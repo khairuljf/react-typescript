@@ -43,3 +43,28 @@
     transform: scale(0.8);
     box-shadow: 0 0 5px #000;
 }
+
+.todos{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+
+.todos .single-todo{
+    display: flex;
+    background: #fff;
+    margin: 10px 0;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.todos .single-todo .item-content{
+    width: 70%;
+}
+.todos .single-todo .item-actions{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}

@@ -23,8 +23,6 @@ const App:React.FC = () => {
 
         setTodo("");
       }
-
-      console.log(todos)
   }
 
 
@@ -34,7 +32,7 @@ const App:React.FC = () => {
     <div className="App">
       <span className='heading'> Tasks  </span>
       <InputField todo={todo}  setTodo={setTodo} handleSubmit={handleSubmit}  />
-      <TodoList todos={todos} />  
+      <TodoList todos={todos} setTodos={setTodos} />  
     </div>
   );
 }
