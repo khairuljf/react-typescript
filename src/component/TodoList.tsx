@@ -1,12 +1,14 @@
-import {todosType} from  '../todosType';
-interface Props{
-    todos: todosType[];
+import React from 'react';
+import {TodosType} from  '../todosType';
+interface props{
+    todos: TodosType[];
 }
 
-const TodoList:React.FC(Props) = ({todos}) => {
+const TodoList:React.FC<props> = ({todos}) => {
+    console.log(todos)
   return (
         <div className="todos">
-            hello world
+                <h1>Hello from todolist</h1>
         </div>
   )
 }
