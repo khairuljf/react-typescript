@@ -12,7 +12,7 @@ const TodoList:React.FC<props> = ({todos, setTodos}) => {
     <div className='todos'>
       
     {
-  
+
         todos.map(item=>
           <SingleTodo key={item.id} todos={todos}   item={item} setTodos={setTodos}  />
         )
